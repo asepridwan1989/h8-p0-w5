@@ -1,6 +1,5 @@
 function graduates(students) {
-	let result = {};
-
+	var result = {};
 	if (students === undefined || students.length === 0) {
 		return result;
 	} else {
@@ -10,7 +9,7 @@ function graduates(students) {
 		}
 		var filteredKelas = [];
 		for (var j = 0; j < kelas.length; j++) {
-			let current = kelas[j];
+			var current = kelas[j];
 			if (filteredKelas.indexOf(current) < 0) filteredKelas.push(current);
 		}
 		for (var k = 0; k < filteredKelas.length; k++) {
